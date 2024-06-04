@@ -4,11 +4,9 @@ import os
 import telegram
 from dotenv import load_dotenv
 
-from adapter.monobank_api_adapter import MonoApiAdapter
-from models.account_info import AccountInfo
-from models.webhook_response import WebhookResponse
-
-load_dotenv()
+from app.adapter.monobank_api_adapter import MonoApiAdapter
+from app.models.account_info import AccountInfo
+from app.models.webhook_response import WebhookResponse
 
 
 class TelegramBotAdapter:

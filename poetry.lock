@@ -675,6 +675,17 @@ files = [
 cli = ["click (>=5.0)"]
 
 [[package]]
+name = "python-json-logger"
+version = "2.0.7"
+description = "A python library adding a json log formatter"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "python-json-logger-2.0.7.tar.gz", hash = "sha256:23e7ec02d34237c5aa1e29a070193a4ea87583bb4e7f8fd06d3de8264c4b2e1c"},
+    {file = "python_json_logger-2.0.7-py3-none-any.whl", hash = "sha256:f380b826a991ebbe3de4d897aeec42760035ac760345e57b812938dc8b35e2bd"},
+]
+
+[[package]]
 name = "python-multipart"
 version = "0.0.9"
 description = "A streaming multipart parser for Python"
@@ -687,6 +698,31 @@ files = [
 
 [package.extras]
 dev = ["atomicwrites (==1.4.1)", "attrs (==23.2.0)", "coverage (==7.4.1)", "hatch", "invoke (==2.2.0)", "more-itertools (==10.2.0)", "pbr (==6.0.0)", "pluggy (==1.4.0)", "py (==1.11.0)", "pytest (==8.0.0)", "pytest-cov (==4.1.0)", "pytest-timeout (==2.2.0)", "pyyaml (==6.0.1)", "ruff (==0.2.1)"]
+
+[[package]]
+name = "python-telegram-bot"
+version = "21.2"
+description = "We have made you a wrapper you can't refuse"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "python-telegram-bot-21.2.tar.gz", hash = "sha256:2ebb462a98f502727d108c00bb50c513a68ddaf9545298c42f13996a9acf8354"},
+    {file = "python_telegram_bot-21.2-py3-none-any.whl", hash = "sha256:af0f45d61521126de98f5bdc8a75a9df8b93d0c35d18b018181ca7648a38b017"},
+]
+
+[package.dependencies]
+httpx = ">=0.27,<1.0"
+
+[package.extras]
+all = ["APScheduler (>=3.10.4,<3.11.0)", "aiolimiter (>=1.1.0,<1.2.0)", "cachetools (>=5.3.3,<5.4.0)", "cryptography (>=39.0.1)", "httpx[http2]", "httpx[socks]", "pytz (>=2018.6)", "tornado (>=6.4,<7.0)"]
+callback-data = ["cachetools (>=5.3.3,<5.4.0)"]
+ext = ["APScheduler (>=3.10.4,<3.11.0)", "aiolimiter (>=1.1.0,<1.2.0)", "cachetools (>=5.3.3,<5.4.0)", "pytz (>=2018.6)", "tornado (>=6.4,<7.0)"]
+http2 = ["httpx[http2]"]
+job-queue = ["APScheduler (>=3.10.4,<3.11.0)", "pytz (>=2018.6)"]
+passport = ["cryptography (>=39.0.1)"]
+rate-limiter = ["aiolimiter (>=1.1.0,<1.2.0)"]
+socks = ["httpx[socks]"]
+webhooks = ["tornado (>=6.4,<7.0)"]
 
 [[package]]
 name = "pyyaml"
@@ -1198,4 +1234,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "c6c7e3a9d62865958b5185aba263bbc0b9b6c13cb245977962561ade85c8988b"
+content-hash = "1f4bf65e45450e5be11ea396ecf52ca28ee854cd38005ecfb299cc8f70b7926c"

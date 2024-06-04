@@ -3,7 +3,7 @@ import os
 import requests
 from dotenv import load_dotenv
 
-from models.account_info import AccountInfo
+from app.models.account_info import AccountInfo
 
 load_dotenv()
 

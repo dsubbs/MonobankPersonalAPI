@@ -9,13 +9,18 @@ logger = logging.getLogger(__name__)
 
 from fastapi import FastAPI
 
-from adapter.monobank_api_adapter import MonoApiAdapter
-from bot.bot import TelegramBotAdapter
-from models.webhook_response import WebhookResponse
+from app.adapter.monobank_api_adapter import MonoApiAdapter
+from app.bot.bot import TelegramBotAdapter
+from app.models.webhook_response import WebhookResponse
 
-app = FastAPI()
+app = FastAPI(docs_url=None, redoc_url=None)
 adapter = MonoApiAdapter()
 bot = TelegramBotAdapter()
+
+
+@app.get("/")
+async def read_root():
+    return {"Hello": "World"}
 
 
 @app.get("/get_info")
