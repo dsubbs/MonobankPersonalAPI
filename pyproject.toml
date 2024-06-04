@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "monobankpersonalapi"
+version = "1.0.0"
+description = ""
+authors = ["Danyil Subotin <danyil.subotin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+requests = "^2.32.3"
+python-telegram-bot = "^21.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
