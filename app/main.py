@@ -39,6 +39,11 @@ async def setup_webhook():
     return
 
 
+@app.get("/mono_webhook")
+async def mono_webhook():
+    pass
+
+
 @app.post("/mono_webhook")
 async def mono_webhook(data: WebhookResponse):
     await bot.send_message(data)
